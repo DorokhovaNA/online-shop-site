@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+$color-pink: #f16d7f; 
+$border: 1px solid;
+$font-fa: lato, sans-serif;
+
 summary::marker {
     display: none
 }
@@ -52,9 +56,9 @@ summary::marker {
     height: 38px;
     background-color: #cdcdcc;
     background-image: linear-gradient(180.0deg, #f9f9f9 0%, #f5f5f5 100%);
-    border: 1px solid #e6e6e6;
+    border: $border #e6e6e6;
     border-radius: 3px 0px 0px 3px;
-    font: 500 14px/32px lato, sans-serif;
+    font: 500 14px/32px $font-fa;
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.025em;
@@ -88,8 +92,8 @@ summary::marker {
     top: -5px;
     left: 7%;
     transform: rotate(45deg);
-    border-top: 1px solid #e8e8e8;
-    border-left: 1px solid #e8e8e8;;
+    border-top: $border #e8e8e8;
+    border-left: $border #e8e8e8;;
 }
 
 .fa-caret-down {
@@ -104,19 +108,19 @@ summary::marker {
 
 .logo__text {
     padding: 16px 0 0 13px;
-    font: 300 27px/32px lato, sans-serif;
+    font: 300 27px/32px $font-fa;
     letter-spacing: 0.025em;
 }
 
 .logo__text_red {
-    color: #f16d7f;
-    font: 900 27px/32px lato, sans-serif;
+    color: $color-pink;
+    font: 900 27px/32px $font-fa;
 }
 
 .search-form {
     width: 317px;
     position: relative;
-    border: 1px solid #e6e6e6;
+    border: $border #e6e6e6;
     height: 38px;
 }
 
@@ -130,7 +134,7 @@ summary::marker {
     height: 100%;
     border: 0px solid #e6e6e6;
     border-radius: 0px 3px 3px 0px;
-    font: 300 14px/32px lato, sans-serif;
+    font: 300 14px/32px $font-fa;
     padding-left: 3%;
     letter-spacing: 0.025em;
     color: #a4a4a4;
@@ -143,7 +147,7 @@ summary::marker {
     width: 38px;
     height: 38px;
     background-color: #ffffff;
-    border-left: 1px solid #e6e6e6;
+    border-left: $border #e6e6e6;
     border-top: 0;
     border-right: 0;
     border-bottom: 0;
@@ -166,8 +170,8 @@ summary::marker {
 .button__account {
     width: 130px;
     height: 35px;
-    background-color: #f16d7f;
-    border: 1px solid transparent;
+    background-color: $color-pink;
+    border: $border transparent;
     font: 400 15px/32px latoregular, sans-serif;
     color: #ffffff;
     padding-top: 3px;
@@ -185,8 +189,8 @@ summary::marker {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     background-color: #fff;
-    border: 1px solid #f16d7f;
-    color: #f16d7f;
+    border: $border $color-pink;
+    color: $color-pink;
 }
 
 .header-nav {
@@ -235,8 +239,8 @@ summary::marker {
     top: -9px;
     left: 7%;
     transform: rotate(45deg);
-    border-top: 1px solid #e8e8e8;
-    border-left: 1px solid #e8e8e8;;
+    border-top: $border #e8e8e8;
+    border-left: $border #e8e8e8;;
 }
 
 .megabox_last::before {
@@ -257,8 +261,8 @@ summary::marker {
 }
 
 .megabox-flex__title {
-    font: 400 14px/32px lato, sans-serif;
-    border-bottom: 1px solid #e8e8e8;
+    font: 400 14px/32px $font-fa;
+    border-bottom: $border #e8e8e8;
     margin-bottom: 8px;
     width: 235px;
 }
@@ -266,7 +270,7 @@ summary::marker {
 .megabox-flex__link {
     display: block;
     text-decoration: none;
-    font: 400 14px/28px lato, sans-serif;;
+    font: 400 14px/28px $font-fa;
     color: #646464;
 }
 
@@ -277,13 +281,13 @@ summary::marker {
 }
 
 .megabox-flex__link:hover {
-    color: #f16d7f;
+    color: $color-pink;
 }
 
 .menu__item {
     text-decoration: none;
     display: block;
-    font: 700 14px/18px lato, sans-serif;
+    font: 700 14px/18px $font-fa;
     color: #000;
     text-decoration: none;
     transition: opacity 0.5s;
@@ -311,7 +315,7 @@ summary::marker {
 .menu__item:hover {
     opacity: 1;
     transform: skew(0deg);
-    color: #f16d7f;
+    color: $color-pink;
 }
   
 .menu__item:hover::after {
@@ -322,7 +326,7 @@ summary::marker {
     content: '';
     width: 100%;
     height: 3px;
-    background: #f16d7f;
+    background: $color-pink;
 }
   
 .menu__item:hover::after,
@@ -351,11 +355,11 @@ summary::marker {
     left: 2%;
     width: 45%;
     height: 92px;
-    border-left: 12px solid #f16d7f;
+    border-left: 12px solid $color-pink;
 }
 
 .banner__content-text_title {
-    font: 900 60px/50px lato, sans-serif;
+    font: 900 60px/50px $font-fa;
     letter-spacing: 0.025em;
     color: #222222;
     text-align: left;
@@ -363,14 +367,14 @@ summary::marker {
 }
 
 .banner__content-text_subtitle {
-    font: 900 40px/52px lato, sans-serif;
+    font: 900 40px/52px $font-fa;
     color: #222222;
     text-align: left;
     padding-left: 2%;
 }
 
 .banner__content-text_color {
-    color: #f16d7f;
+    color: $color-pink;
 }
 
 .offer {
@@ -391,15 +395,15 @@ summary::marker {
     top: 10%;
     background: white;
     text-transform: uppercase;
-    font: 900 18px/21px lato, sans-serif;
+    font: 900 18px/21px $font-fa;
     color: black;
     padding: 16px 19px;
 }
 
 .text_color {
     text-transform: uppercase;
-    font: 900 30px/41px lato, sans-serif;
-    color: #f16d7f;
+    font: 900 30px/41px $font-fa;
+    color: $color-pink;
 }
 
 .offer-block__left_top {
@@ -442,12 +446,12 @@ summary::marker {
 }
 
 .product__title {
-    font: 700 30px/54px lato, sans-serif;
+    font: 700 30px/54px $font-fa;
     text-align: center;
 }
 
 .product__subtitle {
-    font: 400 14px/28px lato, sans-serif;
+    font: 400 14px/28px $font-fa;
     color: #9f9f9f;
     text-align: center;
     margin-bottom: 59px;
@@ -474,14 +478,14 @@ summary::marker {
 .product__card-text {
     padding-top: 19px;
     padding-left: 15px;
-    font: 400 13px/20px lato, sans-serif;
+    font: 400 13px/20px $font-fa;
     text-transform: uppercase;
 }
 
 .price {
     padding-top: 17px;
-    font: 700 16px/20px lato, sans-serif;
-    color: #f16d7f;
+    font: 700 16px/20px $font-fa;
+    color: $color-pink;
     padding-bottom: 5px;
 }
 
@@ -494,7 +498,7 @@ summary::marker {
 .product-add__item {
     position: absolute;
     color: #fff;
-    border: 1px solid #fff;
+    border: $border #fff;
     top: 98px;
     display: none;
     align-items: center;
@@ -508,7 +512,7 @@ summary::marker {
 }
 
 .cart-text {
-    font: 700 13px/18px lato, sans-serif;
+    font: 700 13px/18px $font-fa;
     padding: 10px;
     color: #fff;
 }
@@ -526,10 +530,10 @@ summary::marker {
 }
 
 .product__button {
-    font: 700 16px/54px lato, sans-serif;
+    font: 700 16px/54px $font-fa;
     color: #fff;
-    background-color: #f16d7f;
-    border: 1px solid #f16d7f;
+    background-color: $color-pink;
+    border: $border $color-pink;
     width: 212px;
     margin: 0 auto;
     margin-bottom: 113px;
@@ -543,8 +547,8 @@ summary::marker {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     background-color: #fff;
-    border: 1px #f16d7f solid;
-    color: #f16d7f;
+    border: $border $color-pink;
+    color: $color-pink;
 }
 
 .fa-arrow-right {
@@ -572,7 +576,7 @@ summary::marker {
 }
 
 .promo-content__text {
-    font: 700 54px/60px lato, sans-serif;
+    font: 700 54px/60px $font-fa;
     color: #fff;
     padding-top: 146px;
     padding-left: 39px;
@@ -580,7 +584,7 @@ summary::marker {
 }
 
 .promo-content__text_color {
-    color: #f16d7f;
+    color: $color-pink;
 }
 
 .promo-content__text_size {
@@ -606,13 +610,13 @@ summary::marker {
 }
 
 .promo__title {
-    font: 700 20px/28px lato, sans-serif;
+    font: 700 20px/28px $font-fa;
     color: #fbfbfb;
     padding-bottom: 17px;
 }
 
 .promo__subtitle {
-    font: 300 14px/24px lato, sans-serif;
+    font: 300 14px/24px $font-fa;
     width: 219px;
     color: #fbfbfb;
     padding-bottom: 41px;
@@ -643,7 +647,7 @@ summary::marker {
 }
 
 .feedback__text {
-    font: 400 italic 16px/26px lato, sans-serif;
+    font: 400 italic 16px/26px $font-fa;
     color: #222224;
     letter-spacing: 0.025em;
     width: 386px;
@@ -659,16 +663,16 @@ summary::marker {
 
  .feedback__sig {
     padding-left: 110px;
-    font: 700 16px/26px lato, sans-serif;
+    font: 700 16px/26px $font-fa;
     letter-spacing: 0.025em;
-    color: #f16d7f;
+    color: $color-pink;
     height: 27px;
 }
 
 .feedback__sig_simple {
     padding-top: 0;
     color: #222224;
-    font: 300 12px/14px lato, sans-serif;
+    font: 300 12px/14px $font-fa;
 }
 
 .feedback__form {
@@ -677,7 +681,7 @@ summary::marker {
 
 .feedback__title {
     color: #222224;
-    font: 400 24px/40px lato, sans-serif;
+    font: 400 24px/40px $font-fa;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 0.025em;
@@ -686,7 +690,7 @@ summary::marker {
 
 .feedback__subtitle {
     color: #222224;
-    font: 400 14px/24px lato, sans-serif;
+    font: 400 14px/24px $font-fa;
     text-align: center;
     margin-bottom: 35px;
 }
@@ -700,10 +704,10 @@ summary::marker {
     width: 282px;
     height: 46px;
     border-radius: 23px 0 0 23px;
-    border: 1px solid #e1e1e1;
+    border: $border #e1e1e1;
     background-color: #e1e1e1;
     padding-left: 28px;
-    font: 400 14px/38px lato, sans-serif;
+    font: 400 14px/38px $font-fa;
 }
 
 .feedback__email:focus {
@@ -713,10 +717,10 @@ summary::marker {
 .feedback__button {
     height: 48px;
     color: #fff;
-    font: 400 14px/38px lato, sans-serif;
+    font: 400 14px/38px $font-fa;
     border-radius: 0 23px 23px 0;
-    border: 1px solid #f16d7f;
-    background-color: #f16d7f;
+    border: $border $color-pink;
+    background-color: $color-pink;
     width: 100px;
     align-items: center;
 }
@@ -725,8 +729,8 @@ summary::marker {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     background-color: #fff;
-    border: 1px #f16d7f solid;
-    color: #f16d7f;
+    border: $border $color-pink;
+    color: $color-pink;
 }
 
 .footer__main {
@@ -742,7 +746,7 @@ summary::marker {
 }
 
 .footer__text {
-    font: 300 14px/24px lato, sans-serif;
+    font: 300 14px/24px $font-fa;
     color: #898989;
     width: 427px;
     letter-spacing: 0.025em;
@@ -760,21 +764,21 @@ summary::marker {
 }
 
 .footer__title {
-    font: 600 18px/26px lato, sans-serif;
+    font: 600 18px/26px $font-fa;
     letter-spacing: 0.025em;
-    color: #f16d7f;
+    color: $color-pink;
     margin-bottom: 37px;
 }
 
 .footer__link {
     display: block;
     text-decoration: none;
-    font: 400 16px/29px lato, sans-serif;;
+    font: 400 16px/29px $font-fa;
     color: #898989;
 }
 
 .footer__link:hover {
-    color: #f16d7f;
+    color: $color-pink;
 }
 
 .footer__menu {
@@ -798,7 +802,7 @@ summary::marker {
 }
 
 .footer-end__text {
-    font: 400 16px/42px lato, sans-serif;
+    font: 400 16px/42px $font-fa;
     letter-spacing: 0.025em;
     color: #7a7a7a;
 }
@@ -813,12 +817,12 @@ summary::marker {
     margin-right: 7px;
     padding: 5px 7px;
     background: #fff;
-    border: 1px solid #b2b2b2;
+    border: $border #b2b2b2;
 }
 
 .footer-end__icons:hover {
-    background: #f16d7f;
-    border: 1px solid #f16d7f;
+    background: $color-pink;
+    border: $border $color-pink;
     color: #fff;
 }
 
@@ -835,29 +839,29 @@ summary::marker {
 
 .top__title {
     text-transform: uppercase;
-    color: #f16d7f;
-    font: 900 24px/20px lato, sans-serif;
+    color: $color-pink;
+    font: 900 24px/20px $font-fa;
 }
 
 .top__links_item {
     text-transform: uppercase;
     color: #636363;
-    font: 300 14px/20px lato, sans-serif;
+    font: 300 14px/20px $font-fa;
     text-decoration: none;
 }
 
 .top__links_item:hover {
-    color: #f16d7f;
+    color: $color-pink;
 }
 
 .top__links_item_active {
     font-weight: 700;
-    color: #f16d7f;
+    color: $color-pink;
 }
 
 .single__content {
     background-color: #f7f7f7;
-    border: 1px solid #eaeaea;
+    border: $border #eaeaea;
     height: 777px;
 }
 
@@ -872,7 +876,7 @@ summary::marker {
 }
 
 .single__descrip-card {
-    border: 1px solid #eaeaea;
+    border: $border #eaeaea;
     position: absolute;
     background-color: #ffffff;
     top: 985px;
@@ -889,7 +893,7 @@ summary::marker {
 .single__subtitle {
     text-transform: uppercase;
     color: #4d4d4d;
-    font: 900 18px/24px lato, sans-serif;
+    font: 900 18px/24px $font-fa;
     text-align: center;
     padding-top: 34px;
     padding-bottom: 67px;
@@ -897,15 +901,15 @@ summary::marker {
 
 .single__text {
     color: #5e5e5e;
-    font: 300 14px/24px lato, sans-serif;
+    font: 300 14px/24px $font-fa;
     text-align: center;
 }
 
 .single__text_title {
     font-weight: 700;
-    color: #f16d7f;
+    color: $color-pink;
     width: 160px;
-    border-bottom: 1px solid #e1e1e1;
+    border-bottom: $border #e1e1e1;
     text-align: center;
     margin: 0 auto;
 }
@@ -914,7 +918,7 @@ summary::marker {
     display: block;
     content: '';
     height: 3px;
-    background: #f16d7f;
+    background: $color-pink;
     width: 41%;
     margin: 0 auto;
 }
@@ -936,14 +940,14 @@ summary::marker {
 }
 
 .single__price {
-    font: 700 24px/24px lato, sans-serif;
-    color: #ef5b70;
+    font: 700 24px/24px $font-fa;
+    color: $color-pink;
     padding: 37px 0;
     text-align: center;
 }
 
 .color__option {
-    font: 400 13px/24px lato, sans-serif;
+    font: 400 13px/24px $font-fa;
     color: #bcbcbc;
 }
 
@@ -961,7 +965,7 @@ details > summary {
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-    font: 700 14px/24px lato, sans-serif;
+    font: 700 14px/24px $font-fa;
     color: #2f2f2f;
     padding-top: 70px;
 }
@@ -971,7 +975,7 @@ details > summary {
     height: 33px;
     background-color: #ffffff;
     border: 1px solid #eaeaea;
-    font: 400 13px/24px lato, sans-serif;
+    font: 400 13px/24px $font-fa;
     color: #bcbcbc;
     text-align: center;
     align-items: center;
@@ -988,22 +992,41 @@ details > summary {
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
     transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
     will-change: transform;
     margin-left: 77px;
-}
+  }
   
-details[open] > summary:after {
-    content: "\f146";
+  .dropdown summary:after {
+    content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-}
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    will-change: transform;
+    margin-left: 7px;
+  }
+  
+  details[open] > summary:after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .details__card[open] > summary:after {
+    display: none;
+  }
 
 .option-submenu {
     width: 144px;
     position: absolute;
     z-index: 1;
-    font: 400 13px/24px lato, sans-serif;
+    font: 400 13px/24px $font-fa;
     color: #2f2f2f;
     display: block;
     background: #fff;
@@ -1020,8 +1043,8 @@ details[open] > summary:after {
     width: 144px;
     height: 33px;
     background-color: #ffffff;
-    border: 1px solid #eaeaea;
-    font: 400 13px/24px lato, sans-serif;
+    border: $border #eaeaea;
+    font: 400 13px/24px $font-fa;
     color: #bcbcbc;
     margin-top: 16px;
     outline: #9f9f9f;
@@ -1030,8 +1053,8 @@ details[open] > summary:after {
 .product__button_wide {
     width: 537px;
     background-color: #fff;
-    border: 1px #f16d7f solid;
-    color: #f16d7f;
+    border: $border $color-pink;
+    color: $color-pink;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -1042,12 +1065,12 @@ details[open] > summary:after {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     color: #fff;
-    background-color: #f16d7f;
-    border: 1px solid #f16d7f;   
+    background-color: $color-pink;
+    border: 1px solid $color-pink;   
 }
 
 .single__title {
-    font: 900 24px/20px lato, sans-serif;
+    font: 900 24px/20px $font-fa;
     padding-top: 752px;
     padding-bottom: 72px;
     text-transform: uppercase;
@@ -1063,4 +1086,126 @@ details[open] > summary:after {
 
 .product__card-flex_margin {
     margin-bottom: 73px;
+}
+
+.details__card {
+    border-bottom: $border #e8e8e8;
+    padding: 30px 0;
+}
+
+.details__card:first-of-type {
+    padding-top: 89px;
+}
+
+.details__card:last-of-type {
+    margin-bottom: 93px;
+}
+
+.card-body {
+    display: flex;
+    padding-top: 39px;
+}
+
+.card-body__left {
+    padding-left: 35px;
+    width: 50%;
+}
+
+.card-title {
+    text-transform: uppercase;
+    color: #222222;
+    font: 700 16px/20px $font-fa;
+    cursor: pointer;
+}
+
+.subtitle {
+    font: 700 13px/16px $font-fa;
+    color: #222;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.cd-text {
+    color: #b3b2b2;
+    font: 400 13px/20px $font-fa;
+    padding-bottom: 15px;
+}
+
+.cd-text_register {
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    color: #222;
+}
+
+.cd-text__register {
+    margin-right: 15px;
+}
+
+.subtitle_padding {
+    padding-top: 12px;
+}
+
+.cd-text_padding {
+    padding-bottom: 33px;
+}
+
+.button {
+    text-transform: uppercase;
+    color: #4a4a4a;
+    font: 700 14px/16px $font-fa;
+    background-color: #fff;
+    padding: 19px 50px;
+    margin-bottom: 49px;
+    border: $border #eaeaea;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    color: #fff;
+    background-color: #4a4a4a;
+    cursor: pointer;
+    border: $border #eaeaea;
+}
+
+.cd-text_input {
+    color: #222;
+    padding-bottom: 16px;
+}
+
+.card-body__input {
+    width: 390px;
+    height: 45px;
+    background-color: #ffffff;
+    border: $border #eaeaea;
+    margin-bottom: 22px;
+}
+
+em {
+    font-weight: bold;
+    font-style: normal;
+    color: #f00;
+}
+
+.card-body__input:focus {
+    outline: none;
+}
+
+.btn-block {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cd-text_red {
+    color: red;
+    padding-bottom: 32px;
+}
+
+.button_margin {
+    margin-top: 20px;
+}
+
+.cd-text_position {
+    color: #222;
+    padding-top: 33px;
+    text-decoration: none;
 }

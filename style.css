@@ -515,6 +515,7 @@ summary::marker {
   color: black;
   display: block;
   margin-bottom: 39px;
+  overflow: hidden;
 }
 
 .product__card-flex {
@@ -577,6 +578,17 @@ summary::marker {
   padding-left: 10px;
 }
 
+.product__img {
+  display: block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.product__img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 .product__card-flex:hover .product__img {
   -webkit-filter: brightness(50%);
           filter: brightness(50%);
@@ -620,15 +632,13 @@ summary::marker {
 }
 
 .promo-content {
-  height: 529px;
+  min-height: 529px;
   background: #222224;
   position: relative;
   margin-bottom: 97px;
 }
 
 .promo-content__left {
-  background: no-repeat url(img/promo__img.png);
-  background-size: 50% cover;
   height: 100%;
   position: relative;
 }
@@ -636,7 +646,8 @@ summary::marker {
 .promo-content__text {
   font: 700 54px/60px lato, sans-serif;
   color: #fff;
-  padding-top: 146px;
+  top: 14%;
+  position: absolute;
   padding-left: 39px;
   letter-spacing: 0.025em;
 }
@@ -1145,6 +1156,34 @@ details[open] > summary:after {
   list-style-type: none;
 }
 
+.option-submenu__content_red::before {
+  content: '';
+  height: 7px;
+  width: 7px;
+  background-color: red;
+  padding-right: 14px;
+  margin-right: 16px;
+}
+
+.option-submenu__content_black::before {
+  content: '';
+  height: 7px;
+  width: 7px;
+  background-color: #080101;
+  padding-right: 14px;
+  margin-right: 9px;
+}
+
+.option-submenu__content_white::before {
+  content: '';
+  height: 3px;
+  width: 3px;
+  background-color: #fff;
+  border: 1px solid #222;
+  padding-right: 14px;
+  margin-right: 9px;
+}
+
 .option-content__input {
   width: 144px;
   height: 33px;
@@ -1334,6 +1373,7 @@ em {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 6%;
 }
 
 .main-content__left {
@@ -1609,7 +1649,7 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .right-block__select {
-  width: 807px;
+  width: 821px;
   height: 50px;
   background-color: #f3f3f3;
   margin-left: 23px;
@@ -1647,9 +1687,117 @@ input[type=range]::-webkit-slider-thumb {
   border: 1px solid transparent;
   font: 400 14px/26px lato, sans-serif;
   color: #6f6e6e;
+  padding-left: 7px;
 }
 
 .select-form:focus {
   outline: none;
+}
+
+.sort-item_width {
+  width: 119px;
+}
+
+.product_narrow {
+  padding: 3% 0 0 3%;
+}
+
+.pagination {
+  display: inline-block;
+  border: 1px solid #f0ebeb;
+}
+
+.pagination .pagination__link {
+  color: #636363;
+  float: left;
+  padding: 6px 9px;
+  text-decoration: none;
+  border: 0;
+  margin: 0;
+}
+
+.pagination .link_active {
+  color: #f16d7f;
+}
+
+.pagination .pagination__link:hover:not(.link_active) {
+  background-color: #ddd;
+  -webkit-transform: skew(-10deg);
+          transform: skew(-10deg);
+}
+
+.block-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3% 0 0 3%;
+}
+
+.block-pagination__button {
+  margin-bottom: 32px;
+  border: 1px solid #f16d7f;
+  color: #f16d7f;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.block-pagination__button:hover {
+  margin-bottom: 32px;
+  border: 1px solid transparent;
+  background-color: #f16d7f;
+  color: #fff;
+}
+
+.promo__img_size {
+  height: 23%;
+  width: 18%;
+  padding-bottom: 9%;
+}
+
+.promo__main_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 3%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo-content__right_flex {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 3%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 0;
+  left: 0;
+}
+
+.promo__subtitle_width {
+  width: 90%;
+  text-align: center;
+}
+
+.promo__title_position {
+  text-align: center;
+}
+
+.promo-content__product {
+  min-height: 341px;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */

@@ -171,6 +171,9 @@ summary::marker {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo-basket {
@@ -181,28 +184,34 @@ summary::marker {
   height: 38px;
   margin-right: 26px;
   text-decoration: none;
-  position: relative;
   display: block;
+}
+
+.cart-list {
+  position: relative;
+  padding: 6%;
 }
 
 .cart__flex {
   position: absolute;
-  top: 12%;
+  top: 91%;
   display: none;
   background-color: #fff;
-  width: 21%;
-  right: 1%;
+  width: 270PX;
+  left: -79%;
+  z-index: 1;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+}
+
+.cart-list:hover .cart__flex {
+  display: block;
+  -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 5px 8px rgba(0, 0, 0, 0.16);
 }
 
 .logo-basket:hover {
   opacity: 0.5;
-}
-
-.logo-basket:hover .cart__flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  z-index: 3;
 }
 
 .cart__menu {
@@ -233,6 +242,11 @@ summary::marker {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 7%;
+}
+
+.cart-content:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
 }
 
 .cart__menu__link {
@@ -314,7 +328,7 @@ summary::marker {
 }
 
 .button__account {
-  width: 130px;
+  width: 150px;
   height: 35px;
   background-color: #f16d7f;
   border: 1px solid transparent;
@@ -1332,6 +1346,7 @@ details[open] > summary:after {
   color: #bcbcbc;
   margin-top: 16px;
   outline: #9f9f9f;
+  padding-left: 2%;
 }
 
 .product__button_wide {
@@ -1472,6 +1487,7 @@ details[open] > summary:after {
   background-color: #ffffff;
   border: 1px solid #eaeaea;
   margin-bottom: 22px;
+  padding-left: 3%;
 }
 
 em {
@@ -2163,7 +2179,7 @@ input[type=range]::-webkit-slider-thumb {
 
 .price-block {
   margin-right: 0;
-  height: 20%;
+  height: 193px;
   width: 32%;
   background-color: #f5f3f3;
 }
@@ -2215,6 +2231,11 @@ input[type=range]::-webkit-slider-thumb {
   color: #fff;
   background-color: #f16d7f;
   width: 100%;
+  padding: 5%;
+  height: 100%;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+  font: 700 14px/16px lato, sans-serif;
 }
 
 .price-block__button_color:hover {

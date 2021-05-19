@@ -180,6 +180,137 @@ summary::marker {
   width: 32px;
   height: 38px;
   margin-right: 26px;
+  text-decoration: none;
+  position: relative;
+  display: block;
+}
+
+.cart__flex {
+  position: absolute;
+  top: 12%;
+  display: none;
+  background-color: #fff;
+  width: 21%;
+  right: 1%;
+}
+
+.logo-basket:hover {
+  opacity: 0.5;
+}
+
+.logo-basket:hover .cart__flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 3;
+}
+
+.cart__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 6%;
+  border-bottom: 1px solid rgba(237, 237, 237, 0.74);
+}
+
+.cart-content__name {
+  font: 700 12px/16px lato, sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+  padding: 7% 0;
+}
+
+.cart-content__name_color {
+  color: #f16d7f;
+}
+
+.cart-content__text {
+  padding-left: 14px;
+}
+
+.cart-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 7%;
+}
+
+.cart__menu__link {
+  display: block;
+  text-decoration: none;
+}
+
+.star {
+  content: '\f005';
+  font-family: 'Font Awesome';
+  color: #e4af48;
+  font-size: 12px;
+}
+
+.reset-item__cart {
+  padding-left: 9%;
+}
+
+.cart__price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 6%;
+}
+
+.cart__title {
+  font: 700 16px/20px lato, sans-serif;
+  color: #222;
+}
+
+.cart-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button__checkout {
+  width: 75%;
+  background-color: #fff;
+  border: 1px solid #f16d7f;
+  font: 700 14px/18px lato, sans-serif;
+  text-transform: uppercase;
+  color: #f16d7f;
+  padding: 6%;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  margin: 0 auto;
+}
+
+.button__checkout_color {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  color: #4a4a4a;
+  margin-bottom: 6%;
+}
+
+.button__checkout:hover {
+  border: 1px solid transparent;
+  background-color: #f16d7f;
+  color: #fff;
+}
+
+.button__checkout_color:hover {
+  border: 1px solid transparent;
+  background-color: #4a4a4a;
+  color: #fff;
 }
 
 .button__account {
@@ -557,6 +688,10 @@ summary::marker {
       -ms-flex-pack: center;
           justify-content: center;
   left: 25%;
+}
+
+.product-add__item:hover {
+  opacity: 0.5;
 }
 
 .product__card-flex:hover .product-add__item {
@@ -987,6 +1122,7 @@ summary::marker {
   top: 985px;
   z-index: 1;
   left: 5%;
+  right: 5%;
 }
 
 .single__descrip-narrow {
@@ -1117,9 +1253,10 @@ details > summary {
 }
 
 .dropdown summary:after {
-  content: "\f107";
+  content: "\f0d7";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  color: #838383;
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -1129,9 +1266,11 @@ details > summary {
 }
 
 details[open] > summary:after {
-  content: "\f107";
+  content: "\f0d8";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
+  font-size: 12px;
+  color: #838383;
 }
 
 .details__card[open] > summary:after {
@@ -1319,6 +1458,7 @@ details[open] > summary:after {
   background-color: #4a4a4a;
   cursor: pointer;
   border: 1px solid #eaeaea;
+  opacity: 0.5;
 }
 
 .cd-text_input {
@@ -1366,6 +1506,10 @@ em {
   color: #222;
   padding-top: 33px;
   text-decoration: none;
+}
+
+.cd-text_position:hover {
+  color: #f16d7f;
 }
 
 .main-content {
@@ -1438,7 +1582,7 @@ em {
 }
 
 .left-block__details[open] > summary:after {
-  content: "\f107";
+  content: "\f077";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #838383;
@@ -1454,7 +1598,7 @@ em {
 }
 
 .left-block__details_active[open] > summary:after {
-  content: "\f107";
+  content: "\f077";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   color: #f16d7f;
@@ -1504,7 +1648,7 @@ em {
 }
 
 .input {
-  width: 60px;
+  min-width: 60px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -1799,5 +1943,314 @@ input[type=range]::-webkit-slider-thumb {
 .promo-content__product {
   min-height: 341px;
   margin-bottom: 0;
+}
+
+.cart-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  min-height: 162px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cart-row__link {
+  text-decoration: none;
+  padding: 3% 0;
+}
+
+.product-descrip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.name__title:hover, .name__text:hover {
+  color: #f16d7f;
+}
+
+.product-descrip__name {
+  padding-left: 5%;
+  padding-top: 3%;
+}
+
+.name__title {
+  font: 400 13px/16px lato, sans-serif;
+  color: #222;
+  text-transform: uppercase;
+  padding-bottom: 10%;
+}
+
+.name__text {
+  font: 400 13px/20px lato, sans-serif;
+  color: #575757;
+}
+
+.name__text_bold {
+  padding-left: 3%;
+  font: 300 13px/20px lato, sans-serif;
+  color: #6f6e6e;
+}
+
+.product-descrip__img {
+  width: 20%;
+  height: 100%;
+}
+
+.product-descrip__img:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.product-specif {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 12%;
+}
+
+.name__text_color {
+  color: #656565;
+}
+
+.name__text_border {
+  border: 1px solid #eaeaea;
+  padding: 1% 4%;
+}
+
+.name__text_color:hover {
+  color: #656565;
+  cursor: default;
+}
+
+.reset-item {
+  border: none;
+  background: none;
+}
+
+.reset-icon {
+  color: #c0c0c0;
+  background-color: #fff;
+}
+
+.reset-icon:hover {
+  color: #f16d7f;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.cart__title {
+  font: 700 13px/20px lato, sans-serif;
+  text-transform: uppercase;
+}
+
+.cart__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 90px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.cart__header_left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  padding-left: 37%;
+}
+
+.block-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 7%;
+}
+
+.pay-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.pay-info__title {
+  font: 700 16px/20px lato, sans-serif;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.pay-info__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 233px;
+}
+
+.option-country {
+  width: 345px;
+  border: 1px solid #eaeaea;
+  height: 45px;
+  margin: 21px 0;
+}
+
+.option-country__menu {
+  z-index: 2;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.17);
+          box-shadow: 0 0 0 rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
+  position: absolute;
+  width: 21%;
+  padding: 0 3%;
+  border: 1px solid #eaeaea;
+}
+
+.option-country__text {
+  font: 300 13px/16px lato, sans-serif;
+  color: #b1b1b1;
+  padding: 3%;
+}
+
+.pay-info__input {
+  width: 97%;
+  height: 45px;
+  font: 300 13px/16px lato, sans-serif;
+  color: #b1b1b1;
+  border: 1px solid #eaeaea;
+  padding-left: 3%;
+  margin-bottom: 6%;
+}
+
+.pay-info__input:focus {
+  outline: none;
+}
+
+.pay-info__button {
+  width: 100px;
+  height: 35px;
+  font: 700 11px/15px lato, sans-serif;
+  padding: 0;
+}
+
+.price-block {
+  margin-right: 0;
+  height: 20%;
+  width: 32%;
+  background-color: #f5f3f3;
+}
+
+.adress-block,
+.coupon-block {
+  margin-right: 2%;
+  width: 32%;
+}
+
+.coupon-block__text {
+  padding: 6% 0;
+  font: 300 14px/18px lato, sans-serif;
+}
+
+.price-block__text {
+  padding: 10% 10% 4% 0;
+  font: 400 14px/18px lato, sans-serif;
+  text-align: right;
+  text-transform: uppercase;
+  color: #4a4a4a;
+}
+
+.price-block__text_padding {
+  padding: 0 0 0 7%;
+}
+
+.pay-info__title_position {
+  text-align: right;
+  padding: 0 10% 10% 0;
+}
+
+.pay-info__title_position_color {
+  text-align: right;
+  color: #f16d7f;
+  padding: 0 0 0 7%;
+}
+
+.price-block__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-block__button_color {
+  color: #fff;
+  background-color: #f16d7f;
+  width: 100%;
+}
+
+.price-block__button_color:hover {
+  background-color: #fff;
+  color: #f16d7f;
+}
+
+.price-block__link {
+  width: 82%;
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.option-country:after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #838383;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+  will-change: transform;
+  margin-left: 7px;
+}
+
+.option-country[open] > summary:after {
+  content: "\f0d8";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 12px;
+  color: #838383;
 }
 /*# sourceMappingURL=style.css.map */

@@ -371,8 +371,10 @@
                             <form action="#">
                                 <h4 class="subtitle card-body__subtitle">Check as a guest or register</h4>
                                 <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="guest">checkout as guest</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="register" checked>register</p>
+                                <input class="register cd-text__register" name="register" type="radio" id="guest" value="guest">
+                                <label for="guest" class="cd-text card-body__cd-text cd-text_register">checkout as guest</label><br>
+                                <input class="register cd-text__register" name="register" type="radio" value="register" id="register" checked>
+                                <label for="register" class="cd-text card-body__cd-text cd-text_register">register</label>
                             </form>
                             <h4 class="subtitle card-body__subtitle subtitle_padding">register and save time!</h4>
                             <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
@@ -383,10 +385,10 @@
                         <div class="card-body__right">
                             <h4 class="subtitle card-body__subtitle">Already registed?</h4>
                             <p class="cd-text card-body__cd-text">Please log in below</p>
-                            <label for="email"><p class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></p></label>
-                            <input class="input card-body__input" type="email" required><br>
-                            <label for="password"><p class="cd-text cd-text_input">PASSWORD<em>*</em></p></label>
-                            <input class="input card-body__input" type="password" required>
+                            <label for="input-email" class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></label>
+                            <input class="input card-body__input"  id="input-email" type="email" required><br>
+                            <label for="password" class="cd-text cd-text_input">PASSWORD<em>*</em></label><br>
+                            <input class="input card-body__input" id="password" type="password" required>
                             <p class="cd-text card-body__cd-text cd-text_red">* Required Fileds</p>
                             <div class="btn-block card-body__btn-block">
                                 <button class="button btn-block__button button_margin">Log in</button>
@@ -397,15 +399,17 @@
                 </details>
                 <details class="details details__card">
                     <summary class="card-header">
-                        <h2 class="card-title">02.  BILLING INFORMATION</h2>
+                        <h2 class="card-title">01. Shipping Adress</h2>
                     </summary>
                     <div class="card-body">
                         <div class="card-body__left">
                             <form action="#">
                                 <h4 class="subtitle card-body__subtitle">Check as a guest or register</h4>
                                 <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="guest">checkout as guest</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="register" checked>register</p>
+                                <input class="register cd-text__register" name="register" type="radio" id="guest2" value="guest">
+                                <label for="guest2" class="cd-text card-body__cd-text cd-text_register">checkout as guest</label><br>
+                                <input class="register cd-text__register" name="register" type="radio" value="register" id="register2" checked>
+                                <label for="register2" class="cd-text card-body__cd-text cd-text_register">register</label>
                             </form>
                             <h4 class="subtitle card-body__subtitle subtitle_padding">register and save time!</h4>
                             <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
@@ -416,10 +420,10 @@
                         <div class="card-body__right">
                             <h4 class="subtitle card-body__subtitle">Already registed?</h4>
                             <p class="cd-text card-body__cd-text">Please log in below</p>
-                            <label for="email"><p class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></p></label>
-                            <input class="input card-body__input" type="email"><br>
-                            <label for="password"><p class="cd-text cd-text_input">PASSWORD<em>*</em></p></label>
-                            <input class="input card-body__input" type="password">
+                            <label for="input-email2" class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></label>
+                            <input class="input card-body__input"  id="input-email2" type="email" required><br>
+                            <label for="password2" class="cd-text cd-text_input">PASSWORD<em>*</em></label><br>
+                            <input class="input card-body__input" id="password2" type="password" required>
                             <p class="cd-text card-body__cd-text cd-text_red">* Required Fileds</p>
                             <div class="btn-block card-body__btn-block">
                                 <button class="button btn-block__button button_margin">Log in</button>
@@ -430,15 +434,17 @@
                 </details>
                 <details class="details details__card">
                     <summary class="card-header">
-                        <h2 class="card-title">03.  SHIPPING INFORMATION</h2>
+                        <h2 class="card-title">01. Shipping Adress</h2>
                     </summary>
                     <div class="card-body">
                         <div class="card-body__left">
                             <form action="#">
                                 <h4 class="subtitle card-body__subtitle">Check as a guest or register</h4>
                                 <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="guest">checkout as guest</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="register" checked>register</p>
+                                <input class="register cd-text__register" name="register" type="radio" id="guest3" value="guest">
+                                <label for="guest3" class="cd-text card-body__cd-text cd-text_register">checkout as guest</label><br>
+                                <input class="register cd-text__register" name="register" type="radio" value="register" id="register3" checked>
+                                <label for="register3" class="cd-text card-body__cd-text cd-text_register">register</label>
                             </form>
                             <h4 class="subtitle card-body__subtitle subtitle_padding">register and save time!</h4>
                             <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
@@ -449,10 +455,10 @@
                         <div class="card-body__right">
                             <h4 class="subtitle card-body__subtitle">Already registed?</h4>
                             <p class="cd-text card-body__cd-text">Please log in below</p>
-                            <label for="email"><p class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></p></label>
-                            <input class="input card-body__input" type="email"><br>
-                            <label for="password"><p class="cd-text cd-text_input">PASSWORD<em>*</em></p></label>
-                            <input class="input card-body__input" type="password">
+                            <label for="input-email3" class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></label>
+                            <input class="input card-body__input"  id="input-email3" type="email" required><br>
+                            <label for="password3" class="cd-text cd-text_input">PASSWORD<em>*</em></label><br>
+                            <input class="input card-body__input" id="password3" type="password" required>
                             <p class="cd-text card-body__cd-text cd-text_red">* Required Fileds</p>
                             <div class="btn-block card-body__btn-block">
                                 <button class="button btn-block__button button_margin">Log in</button>
@@ -463,15 +469,17 @@
                 </details>
                 <details class="details details__card">
                     <summary class="card-header">
-                        <h2 class="card-title">04.  SHIPPING METHOD</h2>
+                        <h2 class="card-title">01. Shipping Adress</h2>
                     </summary>
                     <div class="card-body">
                         <div class="card-body__left">
                             <form action="#">
                                 <h4 class="subtitle card-body__subtitle">Check as a guest or register</h4>
                                 <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="guest">checkout as guest</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="register" checked>register</p>
+                                <input class="register cd-text__register" name="register" type="radio" id="guest4" value="guest">
+                                <label for="guest4" class="cd-text card-body__cd-text cd-text_register">checkout as guest</label><br>
+                                <input class="register cd-text__register" name="register" type="radio" value="register" id="register4" checked>
+                                <label for="register4" class="cd-text card-body__cd-text cd-text_register">register</label>
                             </form>
                             <h4 class="subtitle card-body__subtitle subtitle_padding">register and save time!</h4>
                             <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
@@ -482,10 +490,10 @@
                         <div class="card-body__right">
                             <h4 class="subtitle card-body__subtitle">Already registed?</h4>
                             <p class="cd-text card-body__cd-text">Please log in below</p>
-                            <label for="email"><p class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></p></label>
-                            <input class="input card-body__input" type="email"><br>
-                            <label for="password"><p class="cd-text cd-text_input">PASSWORD<em>*</em></p></label>
-                            <input class="input card-body__input" type="password">
+                            <label for="input-email4" class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></label>
+                            <input class="input card-body__input"  id="input-email4" type="email" required><br>
+                            <label for="password4" class="cd-text cd-text_input">PASSWORD<em>*</em></label><br>
+                            <input class="input card-body__input" id="password4" type="password" required>
                             <p class="cd-text card-body__cd-text cd-text_red">* Required Fileds</p>
                             <div class="btn-block card-body__btn-block">
                                 <button class="button btn-block__button button_margin">Log in</button>
@@ -496,15 +504,17 @@
                 </details>
                 <details class="details details__card">
                     <summary class="card-header">
-                        <h2 class="card-title">05.  PAYMENT METHOD</h2>
+                        <h2 class="card-title">01. Shipping Adress</h2>
                     </summary>
                     <div class="card-body">
                         <div class="card-body__left">
                             <form action="#">
                                 <h4 class="subtitle card-body__subtitle">Check as a guest or register</h4>
                                 <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="guest">checkout as guest</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="register" checked>register</p>
+                                <input class="register cd-text__register" name="register" type="radio" id="guest5" value="guest">
+                                <label for="guest5" class="cd-text card-body__cd-text cd-text_register">checkout as guest</label><br>
+                                <input class="register cd-text__register" name="register" type="radio" value="register" id="register5" checked>
+                                <label for="register5" class="cd-text card-body__cd-text cd-text_register">register</label>
                             </form>
                             <h4 class="subtitle card-body__subtitle subtitle_padding">register and save time!</h4>
                             <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
@@ -515,10 +525,10 @@
                         <div class="card-body__right">
                             <h4 class="subtitle card-body__subtitle">Already registed?</h4>
                             <p class="cd-text card-body__cd-text">Please log in below</p>
-                            <label for="email"><p class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></p></label>
-                            <input class="input card-body__input" type="email"><br>
-                            <label for="password"><p class="cd-text cd-text_input">PASSWORD<em>*</em></p></label>
-                            <input class="input card-body__input" type="password">
+                            <label for="input-email5" class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></label>
+                            <input class="input card-body__input"  id="input-email5" type="email" required><br>
+                            <label for="password5" class="cd-text cd-text_input">PASSWORD<em>*</em></label><br>
+                            <input class="input card-body__input" id="password5" type="password" required>
                             <p class="cd-text card-body__cd-text cd-text_red">* Required Fileds</p>
                             <div class="btn-block card-body__btn-block">
                                 <button class="button btn-block__button button_margin">Log in</button>
@@ -529,15 +539,17 @@
                 </details>
                 <details class="details details__card">
                     <summary class="card-header">
-                        <h2 class="card-title">06.  ORDER REVIEW</h2>
+                        <h2 class="card-title">01. Shipping Adress</h2>
                     </summary>
                     <div class="card-body">
                         <div class="card-body__left">
                             <form action="#">
                                 <h4 class="subtitle card-body__subtitle">Check as a guest or register</h4>
                                 <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="guest">checkout as guest</p>
-                                <p class="cd-text card-body__cd-text cd-text_register"><input class="register cd-text__register" name="register" type="radio" value="register" checked>register</p>
+                                <input class="register cd-text__register" name="register" type="radio" id="guest6" value="guest">
+                                <label for="guest6" class="cd-text card-body__cd-text cd-text_register">checkout as guest</label><br>
+                                <input class="register cd-text__register" name="register" type="radio" value="register" id="register6" checked>
+                                <label for="register6" class="cd-text card-body__cd-text cd-text_register">register</label>
                             </form>
                             <h4 class="subtitle card-body__subtitle subtitle_padding">register and save time!</h4>
                             <p class="cd-text card-body__cd-text cd-text_padding">Register with us for future convenience</p>
@@ -548,10 +560,10 @@
                         <div class="card-body__right">
                             <h4 class="subtitle card-body__subtitle">Already registed?</h4>
                             <p class="cd-text card-body__cd-text">Please log in below</p>
-                            <label for="email"><p class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></p></label>
-                            <input class="input card-body__input" type="email"><br>
-                            <label for="password"><p class="cd-text cd-text_input">PASSWORD<em>*</em></p></label>
-                            <input class="input card-body__input" type="password">
+                            <label for="input-email6" class="cd-text cd-text_input">EMAIL ADDRESS<em>*</em></label>
+                            <input class="input card-body__input"  id="input-email6" type="email" required><br>
+                            <label for="password6" class="cd-text cd-text_input">PASSWORD<em>*</em></label><br>
+                            <input class="input card-body__input" id="password6" type="password" required>
                             <p class="cd-text card-body__cd-text cd-text_red">* Required Fileds</p>
                             <div class="btn-block card-body__btn-block">
                                 <button class="button btn-block__button button_margin">Log in</button>
@@ -560,10 +572,8 @@
                         </div>
                     </div>
                 </details>
-              
               </div>
-        </section>
-            
+        </section>        
     </main>
     <footer>
         <section class="feedback">
@@ -635,7 +645,7 @@
         </section>
         <section class="footer-end">
             <div class="footer-end__main container">
-                <p class="footer-end__text">&#x2117;2017 Brand All Rights Reserved.</p>
+                <h4 class="footer-end__text">&#x2117;2017 Brand All Rights Reserved.</h4>
                 <div class="footer-end__social">
                     <a class="footer-end__icons" href="#"><i class="fab fa-facebook-f social"></i></a>
                     <a class="footer-end__icons" href="#"><i class="fab fa-pinterest-p social"></i></a>

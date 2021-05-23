@@ -363,8 +363,8 @@
             <div class="main-content container">
                 <div class="left-block main-content__left">
                     <details class="details left-block__details left-block__details_active">
-                        <summary class="nav-header">
-                            <p class="title nav-header__title_hover nav-header__title_active">Category</p>
+                        <summary class="nav-header title nav-header__title_hover nav-header__title_active">
+                        Category
                         </summary>
                         <ul class="dropdown-menu summary__dropdown-menu">
                             <li><a href="#" class="megabox-flex__link">Accessories</a></li>
@@ -383,8 +383,8 @@
                         </ul>
                     </details>
                     <details class="details left-block__details">
-                        <summary class="nav-header">
-                            <p class="title nav-header__title nav-header__title_active">BRAND</p>
+                        <summary class="nav-header title nav-header__title nav-header__title_active">
+                            BRAND
                         </summary>
                         <ul class="dropdown-menu summary__dropdown-menu">
                             <li><a href="#" class="megabox-flex__link">Accessories</a></li>
@@ -403,8 +403,8 @@
                         </ul>
                     </details>
                     <details class="details left-block__details">
-                        <summary class="nav-header">
-                        <p class="title nav-header__title nav-header__title_active">dESIGNE</p>
+                        <summary class="nav-header title nav-header__title nav-header__title_active">
+                        dESIGNE
                         </summary>
                         <ul class="dropdown-menu summary__dropdown-menu">
                             <li><a href="#" class="megabox-flex__link">Accessories</a></li>
@@ -449,7 +449,7 @@
                         <div class="item-right header__item-right">
                             <h4 class="title item-right__title">pRICE</h4>
                             <label for="range"></label>
-                            <input type="range" min="1" max="1000" value="50" name="range" step="50">
+                            <input type="range" id="range" min="1" max="1000" value="50" name="range" step="50">
                             <div class="output range__output">
                                 <p class="output-text"><output name="result" for="range">52$</output></p>
                                 <p class="output-text"><output name="result" for="range">400$</output></p>
@@ -458,19 +458,19 @@
                     </header>
                     <div class="select right-block__select">
                         <div class="sort-item select__sort-item">
-                            <label for="sort"><span class="link select__link">Sort By</span></label>
-                            <select name="sort" class="select-form" id="sort">
-                                <option value="name"><span class="link select__link">Name</span></option>
-                                <option value="color"><span class="link select__link">Color</span></option>
+                            <label for="sort-color"><span class="link select__link">Sort By</span></label>
+                            <select name="sort" class="select-form" id="sort-color">
+                                <option value="name" class="link select__link">Name</option>
+                                <option value="color" class="link select__link">Color</option>
                             </select>
                         </div>
                         <div class="sort-item select__sort-item sort-item_width">
                             <label for="sort"><span class="link select__link">Show</span></label>
                             <select name="sort" class="select-form select-form_width" id="sort">
-                                <option value="name"><span class="link select__link">03</span></option>
-                                <option value="name"><span class="link select__link">06</span></option>
-                                <option value="name"><span class="link select__link">09</span></option>
-                                <option value="color"><span class="link select__link">12</span></option>
+                                <option value="name" class="link select__link">03</option>
+                                <option value="name" class="link select__link">06</option>
+                                <option value="name" class="link select__link">09</option>
+                                <option value="color" class="link select__link">12</option>
                             </select>
                         </div>
                     </div>
@@ -727,7 +727,7 @@
         </section>
         <section class="footer-end">
             <div class="footer-end__main container">
-                <p class="footer-end__text">&#x2117;2017 Brand All Rights Reserved.</p>
+                <h4 class="footer-end__text">&#x2117;2017 Brand All Rights Reserved.</h4>
                 <div class="footer-end__social">
                     <a class="footer-end__icons" href="#"><i class="fab fa-facebook-f social"></i></a>
                     <a class="footer-end__icons" href="#"><i class="fab fa-pinterest-p social"></i></a>

@@ -361,7 +361,7 @@
     </section> 
     <section class="cart container">
         <div class="cart__header">
-            <p class="cart__title">Product Details</p>
+            <h4 class="cart__title">Product Details</h4>
             <div class="cart__header_left">
                 <p class="cart__title">unite Price</p>
                 <p class="cart__title">Quantity</p>
@@ -435,7 +435,7 @@
             <div class="pay-info__option">
                 <form action="#">
                     <details class="option-country">
-                        <summary><p class="option-country__text">Bangladesh</p></summary>
+                        <summary class="option-country__text">Bangladesh</summary>
                         <div class="option-country__menu">
                             <p class="option-country__text">Bangladesh</p>
                             <p class="option-country__text">Canada</p>
@@ -449,9 +449,9 @@
                         </div>
                     </details>
                     <label for="text"></label>
-                        <input type="text" class="pay-info__input" placeholder="State"><br>
+                        <input type="text" id="text" class="pay-info__input" placeholder="State"><br>
                     <label for="number"></label>
-                        <input type="number" class="pay-info__input" placeholder="Postcode / Zip"><br>
+                        <input type="number" id="number" class="pay-info__input" placeholder="Postcode / Zip"><br>
                     <button class="button pay-info__button">get a quote</button>
                 </form>
             </div>    
@@ -460,14 +460,14 @@
             <h4 class="pay-info__title">coupon discount</h4>
             <p class="coupon-block__text">Enter your coupon code if you have one</p>
             <label for="text"></label>
-                <input type="text" class="pay-info__input" placeholder="State"><br>
+                <input type="text" id="coupon-block__text" class="pay-info__input" placeholder="State"><br>
             <button class="button pay-info__button">Apply coupon</button>
         </div>
         <div class="price-block">
             <p class="price-block__text">Sub total<span class="price-block__text price-block__text_padding">$900</span></p>
             <h4 class="pay-info__title pay-info__title_position">GRAND TOTAL<span class="pay-info__title pay-info__title_position_color">$900</span></h4>
             <div class="price-block__button">
-                <a href="checkout.html" class="price-block__link"><button class="price-block__button_color">proceed to checkout</button></a>
+                <a href="checkout.html" class="price-block__link"><div class="price-block__button_color">proceed to checkout</div></a>
             </div> 
         </div>
     </section> 
@@ -541,7 +541,7 @@
         </section>
         <section class="footer-end">
             <div class="footer-end__main container">
-                <p class="footer-end__text">&#x2117;2017 Brand All Rights Reserved.</p>
+                <h4 class="footer-end__text">&#x2117;2017 Brand All Rights Reserved.</h4>
                 <div class="footer-end__social">
                     <a class="footer-end__icons" href="#"><i class="fab fa-facebook-f social"></i></a>
                     <a class="footer-end__icons" href="#"><i class="fab fa-pinterest-p social"></i></a>

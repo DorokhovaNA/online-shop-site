@@ -702,10 +702,13 @@ summary::marker {
       -ms-flex-pack: center;
           justify-content: center;
   left: 25%;
+  opacity: 0.5;
 }
 
 .product-add__item:hover {
-  opacity: 0.5;
+  opacity: 1;
+  -webkit-box-shadow: 0 3px 3px rgba(237, 237, 237, 0.74);
+          box-shadow: 0 3px 3px rgba(237, 237, 237, 0.74);
 }
 
 .product__card-flex:hover .product-add__item {
